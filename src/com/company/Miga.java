@@ -6,17 +6,17 @@ public class Miga extends Human implements Actions{
     }
 
     @Override
-    public void Act1(Action act) {
-        System.out.print(Name + act.GetValue() + "к воротам, ");
+    public void cameup(Action act) {
+        System.out.print(Name + act.getValue() + "к воротам, ");
     }
-    public void Act2(Action act) {
-        System.out.print( act.GetValue() + "в щель и, ");
+    public void watched(Action act) {
+        System.out.print( act.getValue() + "в щель и, ");
     }
-    public void Act3(Action act) {
-        System.out.print( act.GetValue() + "свет в окнах дома, ");
+    public void noticed(Action act) {
+        System.out.print( act.getValue() + "свет в окнах дома, ");
     }
-    public void Act4(Action act) {
-        System.out.println( act.GetValue() + "дубинкой в калитку.");
+    public void knocked(Action act) {
+        System.out.println( act.getValue() + "дубинкой в калитку.");
     }
 
 }

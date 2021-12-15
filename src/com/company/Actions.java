@@ -1,8 +1,8 @@
 package com.company;
 
 public interface Actions {
-    void Act1 (Action act);
-    void Act2 (Action act);
-    void Act3 (Action act);
-    void Act4 (Action act);
+    void cameup (Action act);
+    void watched (Action act);
+    void noticed (Action act);
+    void knocked (Action act);
 }

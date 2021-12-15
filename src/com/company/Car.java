@@ -1,12 +1,12 @@
 package com.company;
 
-public class Car  implements Weapones{
+public class Car  implements ToolsAndAction{
     @Override
-    public void fixMove(Action act) {
-        System.out.print(act.GetValue());
+    public void fixAndCarMove(Action act) {
+        System.out.print(act.getValue());
     }
     public void weapon(Items itm) {
-        System.out.println(itm.GetValue());
+        System.out.println(itm.getValue());
     }
 
 

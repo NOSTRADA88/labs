@@ -9,21 +9,21 @@ public class Main {
     Kozlikom kozlikom = new Kozlikom("Козликом");
     Miga miga = new Miga("Мига");
     Car car = new Car();
-    zhulio.ZhulioCar();
-    car.fixMove(Action.Action6);
-    car.fixMove(Action.Action7);
-    car.weapon(Items.TOOL1);
-    car.weapon(Items.TOOL2);
-    zhulio.FakePoliceman();
-    miga.Act1(Action.ACTION1);
-    miga.Act2(Action.ACTION2);
-    miga.Act3(Action.ACTION3);
-    miga.Act4(Action.ACTION4);
-    fix.weapon(Items.WEAPON);
-    fix.fixMove(Action.Action5);
+    zhulio.zhulioCar();
+    car.fixAndCarMove(Action.STOPPED);
+    car.fixAndCarMove(Action.LEFT);
+    car.weapon(Items.FLASHLIGHTS);
+    car.weapon(Items.BATONS);
+    zhulio.fakePoliceman();
+    miga.cameup(Action.CAMEUP);
+    miga.watched(Action.WATCHED);
+    miga.noticed(Action.NOTICED);
+    miga.knocked(Action.KNOCKED);
+    fix.weapon(Items.GUN);
+    fix.fixAndCarMove(Action.SLAPPED);
     }
-//    @Override
-//    public boolean equals(Object obj) {
-//        return super.equals(obj);
-//    }
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }

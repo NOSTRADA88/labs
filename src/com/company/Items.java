@@ -2,15 +2,15 @@ package com.company;
 
 public enum Items {
 
-    TOOL1(" c потайными фонариками "),
-    TOOL2("и c резиновыми электрическими дубинками в руках."),
-    WEAPON(" c ружъём в руках ");
+    FLASHLIGHTS(" c потайными фонариками "),
+    BATONS("и c резиновыми электрическими дубинками в руках."),
+    GUN(" c ружъём в руках ");
 
     private String value;
     Items (String val) {
         value = val;
     }
-    public String GetValue() {
+    public String getValue() {
         return value;
     }
 }

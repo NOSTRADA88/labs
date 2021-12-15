@@ -1,18 +1,18 @@
 package com.company;
 
 public enum Action {
-    ACTION1(" подошел "),
-    ACTION2("посмотрел "),
-    ACTION3("заметив "),
-    ACTION4("принялся громко стучать "),
-    Action5( " зашлепал в своих шлепанцах по дорожке."),
-    Action6("Автомобиль остановился, "),
-    Action7("из него вышли четверо полицеских");
+    CAMEUP(" подошел "),
+    WATCHED("посмотрел "),
+    NOTICED("заметив "),
+    KNOCKED("принялся громко стучать "),
+    SLAPPED( " зашлепал в своих шлепанцах по дорожке."),
+    STOPPED("Автомобиль остановился, "),
+    LEFT("из него вышли четверо полицеских");
     private String value;
     Action (String val) {
         value = val;
     }
-    public String GetValue() {
+    public String getValue() {
         return value;
     }
 }
